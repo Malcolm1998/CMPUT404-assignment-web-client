@@ -154,9 +154,6 @@ if __name__ == "__main__":
         help()
         sys.exit(1)
     elif (len(sys.argv) == 3):
-        test = client.command( sys.argv[2], sys.argv[1] )
-        print(test)
+        print(client.command( sys.argv[2], sys.argv[1] ))
     else:
-        test = client.command( sys.argv[1] )
-        print(test)
-    print("test")
+        print(client.command( sys.argv[1] ))
